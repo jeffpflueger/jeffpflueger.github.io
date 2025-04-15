@@ -52,7 +52,7 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-  text-align: left;
+  text-align: center;
   padding: 60px 20px;
   background-color: #fff;
   border-radius: 10px;
@@ -65,7 +65,13 @@ nav ul li a:hover {
   margin-bottom: 15px;
 }
 
+.hero h3 {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
 .hero p {
+  text-align: left;
   font-size: 1.1em;
   margin-bottom: 25px;
   color: #666;
