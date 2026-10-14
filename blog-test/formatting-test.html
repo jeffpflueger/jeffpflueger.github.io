@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formatting Test</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    .hero ul, .hero ol { text-align: left; margin: 0 0 25px 1.5em; font-size: 1.1em; color: #666; }
+    .hero li ul, .hero li ol { margin-bottom: 0; font-size: 1em; }
+    .hero img { max-width: 100%; height: auto; }
+    .hero table { border-collapse: collapse; margin: 0 0 25px; text-align: left; }
+    .hero td { border: 1px solid #ddd; padding: 6px 10px; color: #666; }
+    .post-date { color: #999; margin-bottom: 30px; }
+    .post-nav { text-align: left; margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee; }
+    .post-nav ul { list-style: none; margin-left: 0; }
+    .post-nav .current { font-weight: bold; }
+    .prev-next { display: flex; justify-content: space-between; gap: 20px; margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Jeff Pflueger</h1>
+      <nav>
+        <ul>
+          <li><a href="http://jeffpflueger.com">Home</a></li>
+          <li><a href="../log.html">AI Log</a></li>
+          <li><a href="index.html">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+<h2>Formatting Test</h2>
+<p class="post-date">October 14, 2026</p>
+<h3>Introduction</h3>
+<p>This post tests the blog converter. Plain text, <strong>bold words</strong>, <em>italic words</em>, <strong><em>bold italic</em></strong>, and a <a href="https://jeffpflueger.com/log.html">link to my site</a>.</p>
+<p>Special characters: &lt;tags&gt;, ampersands &amp; &quot;double&quot; and &#39;single&#39; quotes.</p>
+<h4>Bulleted list</h4>
+<ul>
+<li>First item
+<ul>
+<li>Nested item A
+<ul>
+<li>Deeper item
+</li>
+</ul>
+</li>
+<li>Nested item B
+</li>
+</ul>
+</li>
+<li>Second item
+</li>
+</ul>
+<h4>Numbered list</h4>
+<ol>
+<li>Step one
+</li>
+<li>Step two
+</li>
+<li>Step three
+</li>
+</ol>
+<h4>Image</h4>
+<p><img src="img/formatting-test-1.png" alt="Google logo"></p>
+<h4>Table</h4>
+<table>
+<tr><td>CPU</td><td>AMD Ryzen AI 9 HX 370</td></tr>
+<tr><td>GPU</td><td>Radeon 890M</td></tr>
+</table>
+<hr>
+<p>Date: this later line should stay as normal text.</p>
+<nav class="post-nav">
+<div class="prev-next">
+<span></span>
+<span></span>
+</div>
+<h3>All posts</h3>
+<ul>
+<li class="current">Formatting Test <span class="post-date-small">(October 14, 2026)</span></li>
+</ul>
+</nav>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Site hosted on <a href='https://pages.github.com/'>GitHub Pages</a></p>
+    </div>
+  </footer>
+</body>
+</html>
