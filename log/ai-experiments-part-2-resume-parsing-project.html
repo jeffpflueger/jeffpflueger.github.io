@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Resume Parsing Project</title>
+  <title>AI experiments part 2: Resume Parsing Project</title>
   <link rel="stylesheet" href="../styles.css" />
   <style>
     .hero ul, .hero ol { text-align: left; margin: 0 0 25px 1.5em; font-size: 1.1em; color: #666; }
@@ -43,37 +43,39 @@
     <section class="hero">
 <nav class="post-nav post-nav-top">
 <div class="prev-next">
-<span class="prev"><a href="setting-up-a-local-ai-workstation.html">&larr; Setting Up A Local AI Workstation</a></span>
+<span class="prev"><a href="ai-experiments-part-1-setting-up-a-local-ai-workstation.html">&larr; AI experiments part 1: Setting Up A Local AI Workstation</a></span>
 <span class="next"></span>
 </div>
 </nav>
-<h2>Resume Parsing Project</h2>
+<h2>AI experiments part 2: Resume Parsing Project</h2>
 <p class="post-date">October 2, 2025</p>
 <p>Ok so I set up my local AI workstation</p>
-<p><strong>Now to start doing some work.</strong> At this time I am looking at ChatGPT and the coding I can do through the command line on the chatGPT website</p>
+<p><strong>Now to start doing some work.</strong> At this time I am looking at ChatGPT and the coding I can do through the text box on the chatGPT website</p>
 <h5>Step 2 - Pick a project</h5>
 <p>I&#39;m interested in learning more about document parsing automation. What I have seen in the healthcare industry is a lot of documents requiring people to enter and re-enter data. Big opportunity for automation!</p>
 <p>Wouldn&#39;t it be cool to automate a lot of that work? To learn more about what is possible today leveraging AI, I am choosing to start in an area where I suspect a lot of document parsing work has been done - RESUMES. Seems like a good project because hopefully it is bite sized and achievable and will require on a lot of different AI tools.</p>
 <h5>Step 3 - leverage and learn about how I can use AI to speed my learning</h5>
 <p>One aspect I want to learn about is using AI to augment/help with coding. So I started with a prompt using ChatGPT - which I am somewhat familiar with: &quot;write me python code that will download a PDF resume from google drive and use pytorch libraries to parse and save the document into the JSON Resume format.”</p>
-<p>ChatGPT write code, but it suggests the specific python libraries that I will need to install on my workstation and even instructions on the installation of the libraries. All in simple plain and friendly English and clean code. I am blown away. It takes some time to install the libraries, manage the code in github, and clone the repository down to my local development environment. But I run it and what do I find? bugs of course. But to debug I simply copy and paste the debugging messages to ChatGPT - or ask it about issues I am running into and ChatGPT then suggests changes to its own code and rewrites it. Mind BLOWN</p>
-<p>Learning: Debugging and testing is so tedious this way. Could be automating the git commits and also the deployment and the testing….</p>
+<p>ChatGPT write code, but it suggests the specific python libraries that I will need to install on my workstation and even instructions on the installation of the libraries. All in simple plain and friendly English and clean code. I am blown away. It takes some time to install the libraries on my local Ubuntu desktop, manage the code in github, and clone the repository down to my local development environment. But I run it and what do I find? bugs of course. So ChatGPT is producing code in the browser window, I am copying and pasting code to a local text editor and committing the changes via GIT. Then running the code, finding errors and copying and pasting the debugging messages to ChatGPT - or ask it about issues I am running into and ChatGPT then suggests changes to its own code and rewrites it. Mind BLOWN. But this workflow is super lame - <strong>wouldn&#39;t it be cool if there were a local environment that could just write the code directly into a file, push changes to GitHub, execute it capture any errors, and then modify the script and run the cycle again. </strong></p>
+<p><strong>Learning: </strong>Debugging and testing is so tedious this way. Could be automating the git commits and also the deployment and the testing….must be something people have built.</p>
+<p><strong>Learning: </strong>ChatGPT can code.</p>
 <p>My script - (or its script? who actually owns the copyright with this iterative collaboration?) I&#39;ll call it OUR script finally gets to the point where I am producing output. But looking at the JSON, the script is failing to parse the data into correct fields. I ask ChatGPT the following:</p>
 <p>This is an OCR script that reads a resume and parses it to JSON. The issue is that there is no AI to interpret the context of each piece of data to parse it correctly. Can you recommend a pytorch library that can do that and alter the code so that it parses the resume correctly?</p>
 <p>I want to point out here that my first ask was pretty clear that correctly parsing the resume was what was required - ChatGPT got us maybe 1/6th of the way there - ignoring the thorniest part - actually parsing the data. But this iterative approach is fine, it keeps everything bite sized and helps me learn as we go.</p>
 <p>ChatGPT: &quot;You&#39;re spot on — raw OCR text doesn&#39;t understand context like “this line is a job title” or “this is an education section.” To improve this, you can use a layout-aware language model trained on document understanding, ideally one that works well with resumes.&quot;</p>
-<p>Learning: ChatGPT does not understand that parsing the text is actually the job I requested. Prompting needs to be more explicit or the model needs to be better.</p>
-<p>So down the rabbit hole I go - first having ChatGPT rewrite the script to implement a layout-aware large language model and then providing training data for resumes and then fine tuning the training data.....so I will learn about the training and labeling....What a perfect learning starting point this project is proving to be. But immediately my little mini PC will not be sufficient for the training.</p>
-<p>Learning: Research and learning new content is a huge strength of these tools. ChatGPTs biggest value at this stage is speeding researching. Old school search is DEAD. Amazing at  how quickly one can learn with ChatGPT. This would have been days of coding and research! And we are talking about just a few hours.</p>
+<p><strong>Learning:</strong> ChatGPT does not understand that parsing the text is actually the job I requested. Prompting needs to be more explicit or the model needs to be better.</p>
+<p>So down the rabbit hole I go - first having ChatGPT rewrite the script to implement a layout-aware large language model and then providing training data for resumes and then fine tuning the training data.....so I will learn about the training and labeling....What a perfect learning starting point this project is proving to be. <strong>But immediately my little mini PC will not be sufficient for the training. Do I buy a more powerful workstation to train a model on resume parsing?</strong></p>
+<p><strong>Learning:</strong> Research and learning new content is a huge strength of these tools. ChatGPTs biggest value at this stage is speeding researching. Old school search is DEAD. Amazing at  how quickly one can learn with ChatGPT. This would have been days of coding and research! And we are talking about just a few hours.</p>
 <nav class="post-nav">
 <div class="prev-next">
-<span class="prev"><a href="setting-up-a-local-ai-workstation.html">&larr; Setting Up A Local AI Workstation</a></span>
+<span class="prev"><a href="ai-experiments-part-1-setting-up-a-local-ai-workstation.html">&larr; AI experiments part 1: Setting Up A Local AI Workstation</a></span>
 <span class="next"></span>
 </div>
 <h3>All posts</h3>
 <ul>
-<li class="current">Resume Parsing Project <span class="post-date-small">(October 2, 2025)</span></li>
-<li><a href="setting-up-a-local-ai-workstation.html">Setting Up A Local AI Workstation <span class="post-date-small">(October 1, 2025)</span></a></li>
+<li class="current">AI experiments part 2: Resume Parsing Project <span class="post-date-small">(October 2, 2025)</span></li>
+<li><a href="ai-experiments-part-1-setting-up-a-local-ai-workstation.html">AI experiments part 1: Setting Up A Local AI Workstation <span class="post-date-small">(October 1, 2025)</span></a></li>
+<li><a href="building-a-simple-cms.html">Building a Simple CMS</a></li>
 </ul>
 </nav>
     </section>
