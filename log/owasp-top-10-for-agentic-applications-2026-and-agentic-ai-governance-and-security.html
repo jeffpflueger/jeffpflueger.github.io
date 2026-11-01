@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OWASP Top 10 For Agentic Applications 2026 and Agentic AI Governance and Security</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    .hero ul, .hero ol { text-align: left; margin: 0 0 25px 1.5em; font-size: 1.1em; color: #666; }
+    .hero li ul, .hero li ol { margin-bottom: 0; font-size: 1em; }
+    .hero h4, .hero h5, .hero h6 { text-align: left; font-size: 1.1em; margin-bottom: 15px; }
+    .hero img { max-width: 100%; height: auto; }
+    .hero table { border-collapse: collapse; margin: 0 0 25px; text-align: left; }
+    .hero td { border: 1px solid #ddd; padding: 6px 10px; color: #666; }
+    .post-date { color: #999; margin-bottom: 30px; }
+    .post-nav { text-align: left; margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee; }
+    .post-nav ul { display: block; list-style: none; margin-left: 0; }
+    .post-nav li { margin: 0 0 6px; }
+    .post-nav a { color: #007BFF; font-weight: normal; text-decoration: none; }
+    .post-nav a:hover { text-decoration: underline; }
+    .post-nav .current { font-weight: bold; }
+    .post-nav-top { margin: 0 0 30px; padding: 0 0 15px; border-top: 0; border-bottom: 1px solid #eee; }
+    .prev-next { display: flex; justify-content: space-between; gap: 20px; margin-bottom: 20px; }
+    .post-nav-top .prev-next { margin-bottom: 0; }
+    .prev-next .next { text-align: right; margin-left: auto; }
+    .hero > .btn { margin-top: 30px; }
+    .hero { overflow-wrap: break-word; }
+    @media (max-width: 700px) {
+      .container { width: 100%; padding: 16px; }
+      header { padding: 10px 0; }
+      header h1 { font-size: 1.6em; margin-bottom: 4px; }
+      .hero { padding: 24px 18px; margin-top: 4px; }
+      .hero h2 { font-size: 1.5em; }
+      .hero p, .hero ul, .hero ol { font-size: 1em; }
+      .post-date { margin-bottom: 20px; }
+      .prev-next { flex-direction: column; gap: 8px; }
+      .prev-next .next { margin-left: 0; text-align: left; }
+      .hero table { display: block; overflow-x: auto; }
+      footer { margin-top: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Jeff Pflueger</h1>
+      <nav>
+        <ul>
+          <li><a href="http://jeffpflueger.com">Home</a></li>
+          <li><a href="../log.html">AI Log</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+<nav class="post-nav post-nav-top">
+<div class="prev-next">
+<span class="prev"><a href="building-a-simple-cms.html">&larr; Building a Simple CMS</a></span>
+<span class="next"></span>
+</div>
+</nav>
+<h2>OWASP Top 10 For Agentic Applications 2026 and Agentic AI Governance and Security</h2>
+<p class="post-date">November 1, 2026</p>
+<p>OWASP (pronounced “Oh-Wasp”) has a cute logo that looks like this:</p>
+<p><img src="img/owasp-top-10-for-agentic-applications-2026-and-agentic-ai-governance-and-security-1.png" alt=""></p>
+<p>OWASP was founded in 2001 as the <strong>Open Web Application Security Project</strong> out of a mailing list of professionals supporting each other on the security concerns of the dial-up era of the internet.</p>
+<p>Over time, OWASP has rapidly evolved to address security concerns not just with the Web, but also with IOT, mobile, cloud, APIs and now AI. In 2023, OWASP rebranded to <strong>Open Worldwide Application Security Project.</strong></p>
+<p><strong>OWASP </strong>is an important organization in cybersecurity that is well known for it’s Top 10 reports<strong>. </strong>Each Top 10 is a free, ranked list of the ten most critical security risks in one area of technology.</p>
+<p>This year’s 2026 is the first year OWASP has published a Top 10 for Agentic AI</p>
+<p>OWASP GenAI Security Project. (2025, December 9). <em>OWASP Top 10 for agentic applications for 2026</em>. OWASP Foundation. <a href="https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/">https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/</a></p>
+<p>Below is a summary of the top 10 and how a platform for Agentic AI governance and security could defend</p>
+<table>
+<tr><td><strong>Stage (per OWASP diagram)</strong></td><td><strong>OWASP risk</strong></td><td><strong>What it means</strong></td><td><strong>How an Agentic AI governance Platform helps</strong></td><td><strong>Main layer</strong></td></tr>
+<tr><td><strong>1. Inputs</strong></p>
+<p><em>User prompts, APIs and external agents entering the system</em></td><td><strong>ASI01: Agent Goal Hijack</strong></td><td>Someone hides instructions in a prompt, email or document, and the agent follows them instead of its real job</td><td>Checks what the agent is trying to do (its “intent”) while it runs, and stops it when it drifts outside its approved job</td><td>Defend</td></tr>
+<tr><td></td><td><strong>ASI03: Identity &amp; Privilege Abuse</strong></td><td>The agent inherits too much access from whoever or whatever calls it, so a hijacked agent can reach everything</td><td>Treats each agent like a privileged account: gives it only the access it needs, blocks unapproved handoffs of authority, and monitors it throughout its life</td><td>Govern</td></tr>
+<tr><td></td><td><strong>ASI09: Human-Agent Trust Exploitation</strong></td><td>The agent persuades a person to approve something unsafe, such as a payment or a data release</td><td>Adds extra checks and monitoring on actions that touch people, especially payments, approvals and data sharing</td><td>Govern + Defend</td></tr>
+<tr><td><strong>2. Integration / Processing</strong></p>
+<p><em>The agents themselves, their memory and their connected data</em></td><td><strong>ASI06: Memory &amp; Context Poisoning</strong></td><td>False information gets planted in the agent’s memory or connected data (RAG) and quietly shapes later decisions</td><td>Inspects what the agent writes to memory and how it uses context, then stops poisoned memory from steering its actions</td><td>Defend</td></tr>
+<tr><td></td><td><strong>ASI07: Insecure Agent-to-Agent Communication</strong></td><td>Agents trust messages from other agents that could be fake or tampered with</td><td>Requires agents to prove who they are, checks messages between them, and enforces approved communication paths</td><td>Govern + Defend</td></tr>
+<tr><td></td><td><strong>ASI10: Rogue Agents</strong></td><td>An agent goes off-script and keeps operating while looking legitimate</td><td>Continuously compares behavior with what’s approved and blocks harmful actions at the moment they happen</td><td>Defend</td></tr>
+<tr><td><strong>3. Outputs</strong></p>
+<p><em>Tools, APIs and resources the agent acts on</em></td><td><strong>ASI02: Tool Misuse &amp; Exploitation</strong></td><td>The agent uses its normal tools (email, databases, APIs) in harmful ways</td><td>Controls <em>how</em> tools are used, not just <em>which</em> ones. Checks each action against policy and blocks risky combinations before they run</td><td>Defend</td></tr>
+<tr><td><strong>All three stages</strong></td><td><strong>ASI04: Agentic Supply Chain Vulnerabilities</strong></td><td>A third-party plugin, tool, model or MCP server is malicious or flawed. It can enter at any stage</td><td>Keeps a live inventory of every agent, tool, plugin and dependency across cloud, SaaS and laptops, and flags risky ones in one place</td><td>Observe + Govern</td></tr>
+<tr><td></td><td><strong>ASI05: Unexpected Code Execution</strong></td><td>The agent writes and runs dangerous code. This can be triggered by an input, happen during processing, or run through a tool</td><td>Watches the agent’s <em>behavior</em> rather than scanning the code text, and supports sandboxing and validation</td><td>Defend</td></tr>
+<tr><td></td><td><strong>ASI08: Cascading Failures</strong></td><td>One mistake spreads through every connected process, from start to finish</td><td>Monitors each step and halts high-risk actions before the damage spreads</td><td>Defend</td></tr>
+</table>
+<nav class="post-nav">
+<div class="prev-next">
+<span class="prev"><a href="building-a-simple-cms.html">&larr; Building a Simple CMS</a></span>
+<span class="next"></span>
+</div>
+<h3>All posts</h3>
+<ul>
+<li class="current">OWASP Top 10 For Agentic Applications 2026 and Agentic AI Governance and Security <span class="post-date-small">(November 1, 2026)</span></li>
+<li><a href="building-a-simple-cms.html">Building a Simple CMS <span class="post-date-small">(October 15, 2026)</span></a></li>
+<li><a href="ai-experiments-part-2-resume-parsing-project.html">AI experiments part 2: Resume Parsing Project <span class="post-date-small">(October 2, 2025)</span></a></li>
+<li><a href="ai-experiments-part-1-setting-up-a-local-ai-workstation.html">AI experiments part 1: Setting Up A Local AI Workstation <span class="post-date-small">(October 1, 2025)</span></a></li>
+</ul>
+</nav>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Site hosted on <a href='https://pages.github.com/'>GitHub Pages</a></p>
+    </div>
+  </footer>
+</body>
+</html>

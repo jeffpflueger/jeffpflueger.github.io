@@ -57,39 +57,44 @@
     <section class="hero">
 <nav class="post-nav post-nav-top">
 <div class="prev-next">
-<span class="prev"><a href="log/ai-experiments-part-2-resume-parsing-project.html">&larr; AI experiments part 2: Resume Parsing Project</a></span>
+<span class="prev"><a href="log/building-a-simple-cms.html">&larr; Building a Simple CMS</a></span>
 <span class="next"></span>
 </div>
 </nav>
-<h2>Building a Simple CMS</h2>
-<p class="post-date">October 15, 2026</p>
-<p>I’ve been around content management systems (CMS) for a long time.</p>
-<p>I wrote a Content Management System in PHP for a project I did for UCSF researchers before Wordpress, Drupal, Squarespace or Wix existed. The researchers logged in, wrote their articles and then clicked a button to publish to the web. Seemed like magic at the time for non-programmers to publish to the web.</p>
-<p>Soon after, I worked for Pantheon. I sold a platform for developers building CMS systems and web applications based on Drupal and Wordpress. I joined as their first sales person. 10th employee when the company had $0 in revenue. I left Pantheon having a successful 5 year run in sales and managing a sales team. I helped grow Pantheon from $0 to $50M in annual recurring revenue.</p>
-<p>Today, I wanted to build a CMS again. But building software has been revolutionized in the past year thanks to agentic AI and the sophistication of the language models for coding.</p>
-<p>The CMS I wrote for UCSF took me months to complete. Today I built a CMS from scratch and it took me <strong>half an hour.</strong></p>
-<p>Today I built <a href="http://jeffpflueger.com">jeffpflueger.com</a> as the front end of a simple CMS system using Google Docs.</p>
-<p>How it works:</p>
-<ol>
-<li>I make or edit content entries in Google docs.
-</li>
-<li>I have an Apps Script that is now a button that lives next to every google doc that I write called Blog Publisher
-</li>
-<li>When I click the Publish the script converts the google doc to HTML, commits the content to github (version control), and publishes it on GitHub pages as a webpage.
-</li>
-</ol>
-<p>The amazing part of all of this, is that just a year ago, an open source platform called OpenClaw was the defacto local AI agent that can orchestrate complex workflows like what I did today. But just a year later, Claude Desktop is so much more.</p>
-<p>Claude completed so much of the work that a developer would typically have to manage for this project by interacting with my browser (like creating a Apps Script, pasting the code into the web interface, testing, doing visual regression testing of the published web page to ensure that the output was what was intended, pushing and pulling from GitHub. Some of this I instructed Claude to do. Much of it, Claude did because it was the right thing to do without any instruction from me. That’s agentic AI</p>
-<p>Just have to take a moment and reflect on how FAST the world is moving right now. And how powerful these tools are becoming.</p>
-<p>30 minutes. An entire simple Content management system that might have taken less time to build than for me to write this first post to my new CMS.</p>
-<p>Now let me click Publish.</p>
+<h2>OWASP Top 10 For Agentic Applications 2026 and Agentic AI Governance and Security</h2>
+<p class="post-date">November 1, 2026</p>
+<p>OWASP (pronounced “Oh-Wasp”) has a cute logo that looks like this:</p>
+<p><img src="log/img/owasp-top-10-for-agentic-applications-2026-and-agentic-ai-governance-and-security-1.png" alt=""></p>
+<p>OWASP was founded in 2001 as the <strong>Open Web Application Security Project</strong> out of a mailing list of professionals supporting each other on the security concerns of the dial-up era of the internet.</p>
+<p>Over time, OWASP has rapidly evolved to address security concerns not just with the Web, but also with IOT, mobile, cloud, APIs and now AI. In 2023, OWASP rebranded to <strong>Open Worldwide Application Security Project.</strong></p>
+<p><strong>OWASP </strong>is an important organization in cybersecurity that is well known for it’s Top 10 reports<strong>. </strong>Each Top 10 is a free, ranked list of the ten most critical security risks in one area of technology.</p>
+<p>This year’s 2026 is the first year OWASP has published a Top 10 for Agentic AI</p>
+<p>OWASP GenAI Security Project. (2025, December 9). <em>OWASP Top 10 for agentic applications for 2026</em>. OWASP Foundation. <a href="https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/">https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/</a></p>
+<p>Below is a summary of the top 10 and how a platform for Agentic AI governance and security could defend</p>
+<table>
+<tr><td><strong>Stage (per OWASP diagram)</strong></td><td><strong>OWASP risk</strong></td><td><strong>What it means</strong></td><td><strong>How an Agentic AI governance Platform helps</strong></td><td><strong>Main layer</strong></td></tr>
+<tr><td><strong>1. Inputs</strong></p>
+<p><em>User prompts, APIs and external agents entering the system</em></td><td><strong>ASI01: Agent Goal Hijack</strong></td><td>Someone hides instructions in a prompt, email or document, and the agent follows them instead of its real job</td><td>Checks what the agent is trying to do (its “intent”) while it runs, and stops it when it drifts outside its approved job</td><td>Defend</td></tr>
+<tr><td></td><td><strong>ASI03: Identity &amp; Privilege Abuse</strong></td><td>The agent inherits too much access from whoever or whatever calls it, so a hijacked agent can reach everything</td><td>Treats each agent like a privileged account: gives it only the access it needs, blocks unapproved handoffs of authority, and monitors it throughout its life</td><td>Govern</td></tr>
+<tr><td></td><td><strong>ASI09: Human-Agent Trust Exploitation</strong></td><td>The agent persuades a person to approve something unsafe, such as a payment or a data release</td><td>Adds extra checks and monitoring on actions that touch people, especially payments, approvals and data sharing</td><td>Govern + Defend</td></tr>
+<tr><td><strong>2. Integration / Processing</strong></p>
+<p><em>The agents themselves, their memory and their connected data</em></td><td><strong>ASI06: Memory &amp; Context Poisoning</strong></td><td>False information gets planted in the agent’s memory or connected data (RAG) and quietly shapes later decisions</td><td>Inspects what the agent writes to memory and how it uses context, then stops poisoned memory from steering its actions</td><td>Defend</td></tr>
+<tr><td></td><td><strong>ASI07: Insecure Agent-to-Agent Communication</strong></td><td>Agents trust messages from other agents that could be fake or tampered with</td><td>Requires agents to prove who they are, checks messages between them, and enforces approved communication paths</td><td>Govern + Defend</td></tr>
+<tr><td></td><td><strong>ASI10: Rogue Agents</strong></td><td>An agent goes off-script and keeps operating while looking legitimate</td><td>Continuously compares behavior with what’s approved and blocks harmful actions at the moment they happen</td><td>Defend</td></tr>
+<tr><td><strong>3. Outputs</strong></p>
+<p><em>Tools, APIs and resources the agent acts on</em></td><td><strong>ASI02: Tool Misuse &amp; Exploitation</strong></td><td>The agent uses its normal tools (email, databases, APIs) in harmful ways</td><td>Controls <em>how</em> tools are used, not just <em>which</em> ones. Checks each action against policy and blocks risky combinations before they run</td><td>Defend</td></tr>
+<tr><td><strong>All three stages</strong></td><td><strong>ASI04: Agentic Supply Chain Vulnerabilities</strong></td><td>A third-party plugin, tool, model or MCP server is malicious or flawed. It can enter at any stage</td><td>Keeps a live inventory of every agent, tool, plugin and dependency across cloud, SaaS and laptops, and flags risky ones in one place</td><td>Observe + Govern</td></tr>
+<tr><td></td><td><strong>ASI05: Unexpected Code Execution</strong></td><td>The agent writes and runs dangerous code. This can be triggered by an input, happen during processing, or run through a tool</td><td>Watches the agent’s <em>behavior</em> rather than scanning the code text, and supports sandboxing and validation</td><td>Defend</td></tr>
+<tr><td></td><td><strong>ASI08: Cascading Failures</strong></td><td>One mistake spreads through every connected process, from start to finish</td><td>Monitors each step and halts high-risk actions before the damage spreads</td><td>Defend</td></tr>
+</table>
 <nav class="post-nav">
 <div class="prev-next">
-<span class="prev"><a href="log/ai-experiments-part-2-resume-parsing-project.html">&larr; AI experiments part 2: Resume Parsing Project</a></span>
+<span class="prev"><a href="log/building-a-simple-cms.html">&larr; Building a Simple CMS</a></span>
 <span class="next"></span>
 </div>
 <h3>Earlier posts</h3>
 <ul>
+<li><a href="log/building-a-simple-cms.html">Building a Simple CMS <span class="post-date-small">(October 15, 2026)</span></a></li>
 <li><a href="log/ai-experiments-part-2-resume-parsing-project.html">AI experiments part 2: Resume Parsing Project <span class="post-date-small">(October 2, 2025)</span></a></li>
 <li><a href="log/ai-experiments-part-1-setting-up-a-local-ai-workstation.html">AI experiments part 1: Setting Up A Local AI Workstation <span class="post-date-small">(October 1, 2025)</span></a></li>
 </ul>
