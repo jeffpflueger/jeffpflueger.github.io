@@ -74,7 +74,7 @@
 <p>Below is a summary of the top 10 and how a platform for Agentic AI governance and security could defend against the vulnerabilities described in the OWASP top 10<br><br>&lt;/human_writing&gt;</p>
 <p><br>&lt;ai_research output&gt;</p>
 <table>
-<tr><td><strong>Stage (per OWASP diagram)</strong></td><td><strong>OWASP risk</strong></td><td><strong>What it means</strong></td><td><strong>How an Agentic AI governance Platform helps</strong></td><td><strong>Main layer</strong></td></tr>
+<tr><td><strong>Stage</strong></td><td><strong>OWASP risk</strong></td><td><strong>What it means</strong></td><td><strong>How an Agentic AI governance Platform helps</strong></td><td><strong>Main layer</strong></td></tr>
 <tr><td><strong>1. Inputs</strong></p>
 <p><em>User prompts, APIs and external agents entering the system</em></td><td><strong>ASI01: Agent Goal Hijack</strong></td><td>Someone hides instructions in a prompt, email or document, and the agent follows them instead of its real job</td><td>Checks what the agent is trying to do (its “intent”) while it runs, and stops it when it drifts outside its approved job</td><td>Defend</td></tr>
 <tr><td></td><td><strong>ASI03: Identity &amp; Privilege Abuse</strong></td><td>The agent inherits too much access from whoever or whatever calls it, so a hijacked agent can reach everything</td><td>Treats each agent like a privileged account: gives it only the access it needs, blocks unapproved handoffs of authority, and monitors it throughout its life</td><td>Govern</td></tr>
