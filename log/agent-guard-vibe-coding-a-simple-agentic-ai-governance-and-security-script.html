@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agent Guard - Vibe Coding A Simple Agentic AI Governance and Security Script</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    .hero ul, .hero ol { text-align: left; margin: 0 0 25px 1.5em; font-size: 1.1em; color: #666; }
+    .hero li ul, .hero li ol { margin-bottom: 0; font-size: 1em; }
+    .hero h4, .hero h5, .hero h6 { text-align: left; font-size: 1.1em; margin-bottom: 15px; }
+    .hero img { max-width: 100%; height: auto; }
+    .hero table { border-collapse: collapse; margin: 0 0 25px; text-align: left; }
+    .hero td { border: 1px solid #ddd; padding: 6px 10px; color: #666; }
+    .post-date { color: #999; margin-bottom: 30px; }
+    .post-nav { text-align: left; margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee; }
+    .post-nav ul { display: block; list-style: none; margin-left: 0; }
+    .post-nav li { margin: 0 0 6px; }
+    .post-nav a { color: #007BFF; font-weight: normal; text-decoration: none; }
+    .post-nav a:hover { text-decoration: underline; }
+    .post-nav .current { font-weight: bold; }
+    .post-nav-top { margin: 0 0 30px; padding: 0 0 15px; border-top: 0; border-bottom: 1px solid #eee; }
+    .prev-next { display: flex; justify-content: space-between; gap: 20px; margin-bottom: 20px; }
+    .post-nav-top .prev-next { margin-bottom: 0; }
+    .prev-next .next { text-align: right; margin-left: auto; }
+    .hero > .btn { margin-top: 30px; }
+    .hero { overflow-wrap: break-word; }
+    @media (max-width: 700px) {
+      .container { width: 100%; padding: 16px; }
+      header { padding: 10px 0; }
+      header h1 { font-size: 1.6em; margin-bottom: 4px; }
+      .hero { padding: 24px 18px; margin-top: 4px; }
+      .hero h2 { font-size: 1.5em; }
+      .hero p, .hero ul, .hero ol { font-size: 1em; }
+      .post-date { margin-bottom: 20px; }
+      .prev-next { flex-direction: column; gap: 8px; }
+      .prev-next .next { margin-left: 0; text-align: left; }
+      .hero table { display: block; overflow-x: auto; }
+      footer { margin-top: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Jeff Pflueger</h1>
+      <nav>
+        <ul>
+          <li><a href="http://jeffpflueger.com">Home</a></li>
+          <li><a href="../log.html">AI Log</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+<nav class="post-nav post-nav-top">
+<div class="prev-next">
+<span class="prev"><a href="owasp-top-10-for-agentic-applications-2026-and-agentic-ai-governance-and-security.html">&larr; OWASP Top 10 For Agentic Applications 2026 and Agentic AI Governance and Security</a></span>
+<span class="next"></span>
+</div>
+</nav>
+<h2>Agent Guard - Vibe Coding A Simple Agentic AI Governance and Security Script</h2>
+<p class="post-date">November 1, 2026</p>
+<p>I’ve written a lot of programs. In a bunch of different languages: Machine language when I was in middle school. Perl back in the day. PHP. Python. Built a lot of pages with HTML, javascript, etc etc</p>
+<p>But I’d never call myself really a programmer. Today especially when so much can be vibe coded.</p>
+<p>But what I love about programming is taking a big idea and breaking it down to the discrete instructions to make it so.</p>
+<p>If you want to get into the weeds to learn something, sometimes trying to write a program to do the thing is the best way to learn the specifics.</p>
+<p>So today I am interested in learning more about the OWASP Top 10 For Agentic Applications 2026 and the challenges that a platform built to manage these risks would face.</p>
+<p>I outlined the top ten security vulnerabilities <a href="https://jeffpflueger.com/log/owasp-top-10-for-agentic-applications-2026-and-agentic-ai-governance-and-security.html">here</a></p>
+<p>Now let’s learn about the challenges that a platform built to manage these risks would face.</p>
+<p>Before we get to specifics of what I’d like Claude to do, at I high level:</p>
+<p>I want Claude to build me an application that is:</p>
+<ul>
+<li>A minimally viable product (MVP). All procedural. No reliance on ML
+</li>
+<li>Written in Python so I can understand what it is doing.
+</li>
+<li>Educational - the goal of this application is as much my learning as it is managing security risks.
+<ul>
+<li>Comment the crap out of the code and explain to me why and what it is doing.
+</li>
+<li>Provide for me a window where I can see real-time what the code is monitoring and doing as I work so I can learn on an ongoing basis.
+</li>
+</ul>
+</li>
+</ul>
+<p>Now the specifics. I want the application to use the table <a href="https://jeffpflueger.com/log/owasp-top-10-for-agentic-applications-2026-and-agentic-ai-governance-and-security.html">here</a> of the Top 10 and:</p>
+<ul>
+<li>Built me a security monitoring platform for Agentic AI running on my Ubuntu workstation.
+</li>
+<li>I want it to monitor specifically Open Claw and Claude Desktop - both of which I use on my Ubuntu AI workstation.
+</li>
+<li>It needs to have a dashboard that is visible of each of the OWASP risks, what’s being tested (and what it can’t test), How many checks it has run and the outcomes of those checks categorized by risk (High, medium, Information)
+</li>
+</ul>
+<p>So Claude Built <strong>Agent Guard</strong></p>
+<p><img src="img/agent-guard-vibe-coding-a-simple-agentic-ai-governance-and-security-script-1.png" alt=""></p>
+<p>Pretty cool app now running on my Ubuntu workstation and informing me when things happen.</p>
+<p>I’ll write up what I learned in the next post</p>
+<nav class="post-nav">
+<div class="prev-next">
+<span class="prev"><a href="owasp-top-10-for-agentic-applications-2026-and-agentic-ai-governance-and-security.html">&larr; OWASP Top 10 For Agentic Applications 2026 and Agentic AI Governance and Security</a></span>
+<span class="next"></span>
+</div>
+<h3>All posts</h3>
+<ul>
+<li class="current">Agent Guard - Vibe Coding A Simple Agentic AI Governance and Security Script <span class="post-date-small">(November 1, 2026)</span></li>
+<li><a href="owasp-top-10-for-agentic-applications-2026-and-agentic-ai-governance-and-security.html">OWASP Top 10 For Agentic Applications 2026 and Agentic AI Governance and Security <span class="post-date-small">(November 1, 2026)</span></a></li>
+<li><a href="building-a-simple-cms.html">Building a Simple CMS <span class="post-date-small">(October 15, 2026)</span></a></li>
+<li><a href="ai-experiments-part-2-resume-parsing-project.html">AI experiments part 2: Resume Parsing Project <span class="post-date-small">(October 2, 2025)</span></a></li>
+<li><a href="ai-experiments-part-1-setting-up-a-local-ai-workstation.html">AI experiments part 1: Setting Up A Local AI Workstation <span class="post-date-small">(October 1, 2025)</span></a></li>
+</ul>
+</nav>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Site hosted on <a href='https://pages.github.com/'>GitHub Pages</a></p>
+    </div>
+  </footer>
+</body>
+</html>

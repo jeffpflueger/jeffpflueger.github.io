@@ -57,45 +57,56 @@
     <section class="hero">
 <nav class="post-nav post-nav-top">
 <div class="prev-next">
-<span class="prev"><a href="log/building-a-simple-cms.html">&larr; Building a Simple CMS</a></span>
+<span class="prev"><a href="log/owasp-top-10-for-agentic-applications-2026-and-agentic-ai-governance-and-security.html">&larr; OWASP Top 10 For Agentic Applications 2026 and Agentic AI Governance and Security</a></span>
 <span class="next"></span>
 </div>
 </nav>
-<h2>OWASP Top 10 For Agentic Applications 2026 and Agentic AI Governance and Security</h2>
+<h2>Agent Guard - Vibe Coding A Simple Agentic AI Governance and Security Script</h2>
 <p class="post-date">November 1, 2026</p>
-<p>OWASP (pronounced “Oh-Wasp”) has a cute logo that looks like this:</p>
-<p><img src="log/img/owasp-top-10-for-agentic-applications-2026-and-agentic-ai-governance-and-security-1.png" alt=""></p>
-<p>OWASP was founded in 2001 as the <strong>Open Web Application Security Project</strong> out of a mailing list of professionals supporting each other on the security concerns of the dial-up era of the internet.</p>
-<p>Over time, OWASP has rapidly evolved to address security concerns not just with the Web, but also with IoT, mobile, cloud, APIs and now AI. In 2023, OWASP rebranded to <strong>Open Worldwide Application Security Project.</strong></p>
-<p><strong>OWASP </strong>is an important organization in cybersecurity that is well known for its Top 10 reports<strong>. </strong>Each Top 10 is a free, ranked list of the ten most critical security risks in one area of technology.</p>
-<p>This year’s 2026 is the first year OWASP has published a Top 10 for Agentic AI</p>
-<p>OWASP GenAI Security Project. (2025, December 9). <em>OWASP Top 10 for agentic applications for 2026</em>. OWASP Foundation. <a href="https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/">https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/</a></p>
-<p>As I learn about the security vulnerabilities related to agentic AI, I thought useful research would be to look at the OWASP top 10 and how the leading governance and security platform Zenity works to mitigate these risks. Surprised to learn that the Zenity CTO collaborated on writing the 2026 OWASP top ten - so we should take this with a grain of salt.</p>
-<p>Below is a summary of the top 10 and how a platform for Agentic AI governance and security could defend against the vulnerabilities described in the OWASP top 10<br><br>&lt;/human_writing&gt;</p>
-<p><br>&lt;ai_research output&gt;</p>
-<table>
-<tr><td><strong>Stage</strong></td><td><strong>OWASP risk</strong></td><td><strong>What it means</strong></td><td><strong>How an Agentic AI governance Platform helps</strong></td><td><strong>Main layer</strong></td></tr>
-<tr><td><strong>1. Inputs</strong></p>
-<p><em>User prompts, APIs and external agents entering the system</em></td><td><strong>ASI01: Agent Goal Hijack</strong></td><td>Someone hides instructions in a prompt, email or document, and the agent follows them instead of its real job</td><td>Checks what the agent is trying to do (its “intent”) while it runs, and stops it when it drifts outside its approved job</td><td>Defend</td></tr>
-<tr><td></td><td><strong>ASI03: Identity &amp; Privilege Abuse</strong></td><td>The agent inherits too much access from whoever or whatever calls it, so a hijacked agent can reach everything</td><td>Treats each agent like a privileged account: gives it only the access it needs, blocks unapproved handoffs of authority, and monitors it throughout its life</td><td>Govern</td></tr>
-<tr><td></td><td><strong>ASI09: Human-Agent Trust Exploitation</strong></td><td>The agent persuades a person to approve something unsafe, such as a payment or a data release</td><td>Adds extra checks and monitoring on actions that touch people, especially payments, approvals and data sharing</td><td>Govern + Defend</td></tr>
-<tr><td><strong>2. Integration / Processing</strong></p>
-<p><em>The agents themselves, their memory and their connected data</em></td><td><strong>ASI06: Memory &amp; Context Poisoning</strong></td><td>False information gets planted in the agent’s memory or connected data (RAG) and quietly shapes later decisions</td><td>Inspects what the agent writes to memory and how it uses context, then stops poisoned memory from steering its actions</td><td>Defend</td></tr>
-<tr><td></td><td><strong>ASI07: Insecure Agent-to-Agent Communication</strong></td><td>Agents trust messages from other agents that could be fake or tampered with</td><td>Requires agents to prove who they are, checks messages between them, and enforces approved communication paths</td><td>Govern + Defend</td></tr>
-<tr><td></td><td><strong>ASI10: Rogue Agents</strong></td><td>An agent goes off-script and keeps operating while looking legitimate</td><td>Continuously compares behavior with what’s approved and blocks harmful actions at the moment they happen</td><td>Defend</td></tr>
-<tr><td><strong>3. Outputs</strong></p>
-<p><em>Tools, APIs and resources the agent acts on</em></td><td><strong>ASI02: Tool Misuse &amp; Exploitation</strong></td><td>The agent uses its normal tools (email, databases, APIs) in harmful ways</td><td>Controls <em>how</em> tools are used, not just <em>which</em> ones. Checks each action against policy and blocks risky combinations before they run</td><td>Defend</td></tr>
-<tr><td><strong>All three stages</strong></td><td><strong>ASI04: Agentic Supply Chain Vulnerabilities</strong></td><td>A third-party plugin, tool, model or MCP server is malicious or flawed. It can enter at any stage</td><td>Keeps a live inventory of every agent, tool, plugin and dependency across cloud, SaaS and laptops, and flags risky ones in one place</td><td>Observe + Govern</td></tr>
-<tr><td></td><td><strong>ASI05: Unexpected Code Execution</strong></td><td>The agent writes and runs dangerous code. This can be triggered by an input, happen during processing, or run through a tool</td><td>Watches the agent’s <em>behavior</em> rather than scanning the code text, and supports sandboxing and validation</td><td>Defend</td></tr>
-<tr><td></td><td><strong>ASI08: Cascading Failures</strong></td><td>One mistake spreads through every connected process, from start to finish</td><td>Monitors each step and halts high-risk actions before the damage spreads</td><td>Defend</td></tr>
-</table>
+<p>I’ve written a lot of programs. In a bunch of different languages: Machine language when I was in middle school. Perl back in the day. PHP. Python. Built a lot of pages with HTML, javascript, etc etc</p>
+<p>But I’d never call myself really a programmer. Today especially when so much can be vibe coded.</p>
+<p>But what I love about programming is taking a big idea and breaking it down to the discrete instructions to make it so.</p>
+<p>If you want to get into the weeds to learn something, sometimes trying to write a program to do the thing is the best way to learn the specifics.</p>
+<p>So today I am interested in learning more about the OWASP Top 10 For Agentic Applications 2026 and the challenges that a platform built to manage these risks would face.</p>
+<p>I outlined the top ten security vulnerabilities <a href="https://jeffpflueger.com/log/owasp-top-10-for-agentic-applications-2026-and-agentic-ai-governance-and-security.html">here</a></p>
+<p>Now let’s learn about the challenges that a platform built to manage these risks would face.</p>
+<p>Before we get to specifics of what I’d like Claude to do, at I high level:</p>
+<p>I want Claude to build me an application that is:</p>
+<ul>
+<li>A minimally viable product (MVP). All procedural. No reliance on ML
+</li>
+<li>Written in Python so I can understand what it is doing.
+</li>
+<li>Educational - the goal of this application is as much my learning as it is managing security risks.
+<ul>
+<li>Comment the crap out of the code and explain to me why and what it is doing.
+</li>
+<li>Provide for me a window where I can see real-time what the code is monitoring and doing as I work so I can learn on an ongoing basis.
+</li>
+</ul>
+</li>
+</ul>
+<p>Now the specifics. I want the application to use the table <a href="https://jeffpflueger.com/log/owasp-top-10-for-agentic-applications-2026-and-agentic-ai-governance-and-security.html">here</a> of the Top 10 and:</p>
+<ul>
+<li>Built me a security monitoring platform for Agentic AI running on my Ubuntu workstation.
+</li>
+<li>I want it to monitor specifically Open Claw and Claude Desktop - both of which I use on my Ubuntu AI workstation.
+</li>
+<li>It needs to have a dashboard that is visible of each of the OWASP risks, what’s being tested (and what it can’t test), How many checks it has run and the outcomes of those checks categorized by risk (High, medium, Information)
+</li>
+</ul>
+<p>So Claude Built <strong>Agent Guard</strong></p>
+<p><img src="log/img/agent-guard-vibe-coding-a-simple-agentic-ai-governance-and-security-script-1.png" alt=""></p>
+<p>Pretty cool app now running on my Ubuntu workstation and informing me when things happen.</p>
+<p>I’ll write up what I learned in the next post</p>
 <nav class="post-nav">
 <div class="prev-next">
-<span class="prev"><a href="log/building-a-simple-cms.html">&larr; Building a Simple CMS</a></span>
+<span class="prev"><a href="log/owasp-top-10-for-agentic-applications-2026-and-agentic-ai-governance-and-security.html">&larr; OWASP Top 10 For Agentic Applications 2026 and Agentic AI Governance and Security</a></span>
 <span class="next"></span>
 </div>
 <h3>Earlier posts</h3>
 <ul>
+<li><a href="log/owasp-top-10-for-agentic-applications-2026-and-agentic-ai-governance-and-security.html">OWASP Top 10 For Agentic Applications 2026 and Agentic AI Governance and Security <span class="post-date-small">(November 1, 2026)</span></a></li>
 <li><a href="log/building-a-simple-cms.html">Building a Simple CMS <span class="post-date-small">(October 15, 2026)</span></a></li>
 <li><a href="log/ai-experiments-part-2-resume-parsing-project.html">AI experiments part 2: Resume Parsing Project <span class="post-date-small">(October 2, 2025)</span></a></li>
 <li><a href="log/ai-experiments-part-1-setting-up-a-local-ai-workstation.html">AI experiments part 1: Setting Up A Local AI Workstation <span class="post-date-small">(October 1, 2025)</span></a></li>
