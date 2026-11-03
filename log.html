@@ -57,60 +57,111 @@
     <section class="hero">
 <nav class="post-nav post-nav-top">
 <div class="prev-next">
-<span class="prev"><a href="log/owasp-top-10-for-agentic-applications-2026-and-agentic-ai-governance-and-security.html">&larr; OWASP Top 10 For Agentic Applications 2026 and Agentic AI Governance and Security</a></span>
+<span class="prev"><a href="log/agent-guard-vibe-coding-a-simple-agentic-ai-governance-and-security-script.html">&larr; Agent Guard - Vibe Coding A Simple Agentic AI Governance and Security Script</a></span>
 <span class="next"></span>
 </div>
 </nav>
-<h2>Agent Guard - Vibe Coding A Simple Agentic AI Governance and Security Script</h2>
-<p class="post-date">November 1, 2026</p>
-<p>I’ve written a lot of programs. In a bunch of different languages: Machine language when I was in middle school. Perl back in the day. PHP. Python. Built a lot of pages with HTML, javascript, etc etc</p>
-<p>But I’d never call myself really a programmer. Today especially when so much can be vibe coded.</p>
-<p>But what I love about programming is taking a big idea and breaking it down to the discrete instructions to make it so.</p>
-<p>If you want to get into the weeds to learn something, sometimes trying to write a program to do the thing is the best way to learn the specifics.</p>
-<p>So today I am interested in learning more about the OWASP Top 10 For Agentic Applications 2026 and the challenges that a platform built to manage these risks would face.</p>
-<p>I outlined the top ten security vulnerabilities <a href="https://jeffpflueger.com/log/owasp-top-10-for-agentic-applications-2026-and-agentic-ai-governance-and-security.html">here</a></p>
-<p>Now let’s learn about the challenges that a platform built to manage these risks would face.</p>
-<p>Before we get to specifics of what I’d like Claude to do, at I high level:</p>
-<p>I want Claude to build me an application that is:</p>
+<h2>IT Operation and Security Operations #2 and #3 for Agentic AI adoption</h2>
+<p class="post-date">November 3, 2026</p>
+<p>I’ve been exploring Agentic AI security.</p>
+<p>I’d like to better understand who is adopting agentic systems and what business functions and tasks they are performing.</p>
+<p>Agentic AI poses security risks. So in defining the set of companies that have the most urgency to solve Agentic AI security risks, I’d like to understand:</p>
+<ol>
+<li>What business functions/tasks are most common
+</li>
+<li>What Industries and verticals are adopting
+</li>
+<li>The risks/consequences of a security breach
+</li>
+</ol>
+<p>Claude compiled this table from the following sources:</p>
 <ul>
-<li>A minimally viable product (MVP). All procedural. No reliance on ML
+<li><a href="https://www.googlecloudpresscorner.com/2025-09-04-Google-Cloud-Study-Reveals-52-of-Executives-Say-Their-Organizations-Have-Deployed-AI-Agents,-Unlocking-a-New-Wave-of-Business-Value,1">Google Cloud – ROI of AI 2025 press release</a>
 </li>
-<li>Written in Python so I can understand what it is doing.
+<li><a href="https://virtualizationreview.com/articles/2025/09/22/google-cloud-study-52-of-orgs-deploy-ai-agents-as-roi-accelerates.aspx">Virtualization Review – Google Cloud study</a>
 </li>
-<li>Educational - the goal of this application is as much my learning as it is managing security risks.
-<ul>
-<li>Comment the crap out of the code and explain to me why and what it is doing.
+<li><a href="https://cloudwars.com/innovation-leadership/the-roi-of-ai-leaders-divulge-revenue-growth-levels-top-use-cases-driving-wins/">Cloud Wars – Google Cloud use cases by industry</a>
 </li>
-<li>Provide for me a window where I can see real-time what the code is monitoring and doing as I work so I can learn on an ongoing basis.
+<li><a href="https://www.searchyour.ai/en/the-roi-of-ai-in-financial-services-google-cloud">Google Cloud – ROI of AI in Financial Services (summary)</a>
+</li>
+<li><a href="https://www.cloudera.com/about/news-and-blogs/press-releases/2025-04-16-96-percent-of-enterprises-are-expanding-use-of-ai-agents-according-to-latest-data-from-cloudera.html">Cloudera – press release</a>
+</li>
+<li><a href="https://www.cloudera.com/blog/business/the-breakout-year-for-enterprise-ai-agents.html">Cloudera – The Breakout Year for Enterprise AI Agents</a>
+</li>
+<li><a href="https://finance.yahoo.com/news/96-enterprises-expanding-ai-agents-130100368.html">Yahoo Finance – Cloudera industry use cases</a>
+</li>
+<li><a href="https://www.langchain.com/stateofaiagents">LangChain – State of AI Agents</a>
+</li>
+<li><a href="https://www.firecrawl.dev/blog/ai-agents">Firecrawl – PwC function data</a>
+</li>
+<li><a href="https://keyholesoftware.com/enterprise-agentic-ai-market-2026/">Keyhole Software – PwC survey details</a>
+</li>
+<li><a href="https://claude.com/blog/how-enterprises-are-building-ai-agents-in-2026">Anthropic – How enterprises are building AI agents in 2026</a>
+</li>
+<li><a href="https://claude.com/resources/guides/the-2026-state-of-ai-agents-report/foreword">Anthropic – 2026 State of AI Agents Report: Foreword</a>
+</li>
+<li><a href="https://prefactor.tech/learn/ai-agent-adoption-statistics">Prefactor – KPMG and Google Cloud industry data</a>
+</li>
+<li><a href="https://www.secondtalent.com/resources/industries-seeing-the-fastest-ai-adoption-rates/">Second Talent – Google Cloud production by industry</a>
+</li>
+<li><a href="https://lexogrine.com/blog/ai-agent-adoption-statistics-2026">Lexogrine – Microsoft active-agent telemetry</a>
+</li>
+<li><a href="https://semanticos.io/blog/mckinsey-state-of-ai-2025-agents">SemanticOS – McKinsey State of AI 2025</a>
 </li>
 </ul>
-</li>
-</ul>
-<p>Now the specifics. I want the application to use the table <a href="https://jeffpflueger.com/log/owasp-top-10-for-agentic-applications-2026-and-agentic-ai-governance-and-security.html">here</a> of the Top 10 and:</p>
-<ul>
-<li>Built me a security monitoring platform for Agentic AI running on my Ubuntu workstation.
-</li>
-<li>I want it to monitor specifically Open Claw and Claude Desktop - both of which I use on my Ubuntu AI workstation.
-</li>
-<li>It needs to have a dashboard that is visible of each of the OWASP risks, what’s being tested (and what it can’t test), How many checks it has run and the outcomes of those checks categorized by risk (High, medium, Information)
-</li>
-</ul>
-<p>So Claude Built <strong>Agent Guard</strong></p>
-<p><img src="log/img/agent-guard-vibe-coding-a-simple-agentic-ai-governance-and-security-script-1.png" alt=""></p>
-<p>Pretty cool app now running on my Ubuntu workstation and informing me when things happen.</p>
-<p>I’ll write up what I learned in the next post</p>
+<p>Some interesting things to note:</p>
+<p>Agentic AI definition. Given the sources are surveys, there is inconsistency from the respondents.</p>
+<p><strong>Customer service &amp; support </strong>ranks as #1. But that is probably because respondents call their LLM chatbot an AGENT because it is performing the role of customer service AGENT. But the customer success agent is not necessarily agentic - ie making autonomous decisions and taking autonomous actions.</p>
+<p>Come customer service systems might indeed be agentic - for instance writing to CRM systems, or interacting with other systems autonomously.</p>
+<p>But. let’s assume that the #1 Agentic Business Task is incorrectly represented because of this confusion.</p>
+<p>That means IT Operations and Security Operations are the #1 and #2 uses of agentic AI</p>
+<p>&lt;/human&gt;</p>
+<p>&lt;ai_output&gt;</p>
+<p><strong>Business tasks ranked from most to least common</strong></p>
+<table>
+<tr><td><strong>Rank</strong></td><td><strong>Business task</strong></td><td><strong>Evidence</strong></td><td><strong>Strength of consensus</strong></td></tr>
+<tr><td><strong>1</strong></td><td><strong>Customer service &amp; support</strong> (tickets, inquiries, support bots)</td><td>Most common use case in the Google Cloud study (49%). Cloudera: 78% report customer support among the applications where agents deliver benefits. PwC: 57% deploy agents in customer service and support. LangChain: 45.8%</td><td>★★★★★ Ranks #1 or #2 in every cross-industry survey</td></tr>
+<tr><td><strong>2</strong></td><td><strong>IT operations &amp; tech support</strong> (service desk, performance monitoring, incident triage)</td><td>Cloudera’s most-deployed agent type: performance optimization bots (66%). Google: tech support 45%. McKinsey: service-desk management is among the fastest-developing uses</td><td>★★★★★</td></tr>
+<tr><td><strong>3</strong></td><td><strong>Security operations / cybersecurity</strong> (security monitoring, threat triage)</td><td>Google: security operations and cybersecurity 46%. Cloudera: security monitoring agents 63%. PwC: IT/cybersecurity 53%</td><td>★★★★☆</td></tr>
+<tr><td><strong>4</strong></td><td><strong>Software development / coding</strong></td><td>Anthropic: nearly 90% use AI for coding; 86% use agents for production code. Cloudera: development assistants 62%</td><td>★★★★☆ Very high in tech-heavy samples, lower in broad business surveys</td></tr>
+<tr><td><strong>5</strong></td><td><strong>Research, summarization &amp; data analysis / reporting</strong></td><td>LangChain’s #1 use case: research and summarization (58%). Anthropic: data analysis and report generation 60%</td><td>★★★★☆</td></tr>
+<tr><td><strong>6</strong></td><td><strong>Internal process &amp; workflow automation</strong> (back office, personal productivity)</td><td>Cloudera: process automation 71%. Anthropic: internal process automation 48%. LangChain: personal productivity 53.5%</td><td>★★★☆☆</td></tr>
+<tr><td><strong>7</strong></td><td><strong>Marketing &amp; sales</strong></td><td>Google: marketing 46%. PwC: sales and marketing 54%</td><td>★★★☆☆</td></tr>
+<tr><td><strong>8</strong></td><td><strong>Industry-specific tasks</strong> (fraud, risk, finance &amp; accounting, scheduling, quality control, supply chain)</td><td>Financial services: fraud detection (43%) is the top industry-specific use case, ahead of quality control in retail (39%) and network configuration in telecom (39%)</td><td>★★☆☆☆ Concentrated in single industries</td></tr>
+<tr><td><strong>9 (least common)</strong></td><td><strong>Product development, HR, strategy &amp; corporate finance, supply chain</strong></td><td>Supply chain optimization, product development and financial planning appear as <em>planned</em> expansion areas rather than current use</td><td>★☆☆☆☆ Mostly planned, not deployed</td></tr>
+</table>
+<p>&lt;/ai_output&gt;</p>
+<p>&lt;human&gt;</p>
+<p>So let’s now look at industry.</p>
+<p>&lt;/human&gt;</p>
+<p>&lt;ai_output&gt;</p>
+<table>
+<tr><td><strong>Industry</strong></td><td><strong>How heavily it uses agents</strong></td><td><strong>Top agent tasks</strong></td><td><strong>Security exposure (OWASP risks)</strong></td><td><strong>ICP fit</strong></td></tr>
+<tr><td><strong>Technology / software</strong></td><td>Highest. 80% of US tech organizations are deploying agents, about 30 points above the 54% cross-industry average. Largest share of Microsoft’s active agents (16%)</td><td>Coding, IT operations, DevOps</td><td>Code execution (ASI05), supply chain (ASI04), cascading failures (ASI08); coding agents have already caused real incidents</td><td><strong>Tier 1.</strong> Highest volume, most technically mature buyers</td></tr>
+<tr><td><strong>Financial services / insurance</strong></td><td>High. Customer service (57%), finance and accounting (48%), security operations (46%), fraud management (43%) and risk management (42%) are the most adopted uses. Banking is at 47% deploying</td><td>Customer service, fraud, risk, compliance</td><td>Agents can approve payments and access customer data: human-trust exploitation (ASI09), privilege abuse (ASI03), tool misuse (ASI02). Heavy regulation pushes governance spending</td><td><strong>Tier 1.</strong> High stakes plus regulatory pressure means budget for security</td></tr>
+<tr><td><strong>Telecom</strong></td><td>High: 56% have agents in production. Security operations and cybersecurity top the use-case list in telecom and media/entertainment</td><td>Customer experience, network operations, security monitoring</td><td>Agents control infrastructure, so cascading failures (ASI08) and rogue agents (ASI10) are the main risks</td><td><strong>Tier 1–2</strong></td></tr>
+<tr><td><strong>Manufacturing / automotive</strong></td><td>High: 56% in production. Top uses are process automation (49%), supply chain optimization (48%) and quality control (47%)</td><td>Process automation, supply chain, quality control, customer service</td><td>Operational-technology connections; supply chain risk (ASI04)</td><td><strong>Tier 2.</strong> Strong adoption, less security-mature</td></tr>
+<tr><td><strong>Public sector</strong></td><td>55% in production. Tech support is the top use case at 56%, then customer service and software development at 51% each</td><td>Tech support, citizen services</td><td>Data exposure, identity abuse (ASI03); procurement cycles are long</td><td><strong>Tier 2–3</strong></td></tr>
+<tr><td><strong>Retail / consumer goods</strong></td><td>51% in production</td><td>Customer service, marketing, quality control</td><td>Customer data exposure, goal hijack through customer prompts (ASI01)</td><td><strong>Tier 2</strong></td></tr>
+<tr><td><strong>Healthcare / life sciences</strong></td><td>Lowest: 44% in production. Top uses are appointment scheduling (51%), diagnostic assistance (50%) and medical records processing (47%)</td><td>Scheduling, records, diagnostics</td><td>Patient health data plus HIPAA makes data leaks via memory poisoning (ASI06) or goal hijack (ASI01) very costly</td><td><strong>Tier 2.</strong> Adoption is lagging, but the compliance need is high, so it’s a strong emerging segment</td></tr>
+</table>
+<p>&lt;/ai_output&gt;</p>
+<p>&lt;human&gt;</p>
+<p>Lesson:</p>
+<p>If I were selling and marketing AI Security to the Enterprise, I would focus on Technology companies and financial services.</p>
+<p>Within those organizations, I’d focus on the IT Operations and Secuirty Operations teams, Which is very interesting - it means that I’d be selling and marketing a product ot the very people that actually have the problem.</p>
 <nav class="post-nav">
 <div class="prev-next">
-<span class="prev"><a href="log/owasp-top-10-for-agentic-applications-2026-and-agentic-ai-governance-and-security.html">&larr; OWASP Top 10 For Agentic Applications 2026 and Agentic AI Governance and Security</a></span>
+<span class="prev"><a href="log/agent-guard-vibe-coding-a-simple-agentic-ai-governance-and-security-script.html">&larr; Agent Guard - Vibe Coding A Simple Agentic AI Governance and Security Script</a></span>
 <span class="next"></span>
 </div>
 <h3>Earlier posts</h3>
 <ul>
+<li><a href="log/agent-guard-vibe-coding-a-simple-agentic-ai-governance-and-security-script.html">Agent Guard - Vibe Coding A Simple Agentic AI Governance and Security Script <span class="post-date-small">(November 1, 2026)</span></a></li>
 <li><a href="log/owasp-top-10-for-agentic-applications-2026-and-agentic-ai-governance-and-security.html">OWASP Top 10 For Agentic Applications 2026 and Agentic AI Governance and Security <span class="post-date-small">(October 31, 2026)</span></a></li>
 <li><a href="log/building-a-simple-cms.html">Building a Simple CMS <span class="post-date-small">(October 15, 2026)</span></a></li>
 <li><a href="log/ai-experiments-part-2-resume-parsing-project.html">AI experiments part 2: Resume Parsing Project <span class="post-date-small">(October 2, 2025)</span></a></li>
 <li><a href="log/ai-experiments-part-1-setting-up-a-local-ai-workstation.html">AI experiments part 1: Setting Up A Local AI Workstation <span class="post-date-small">(October 1, 2025)</span></a></li>
-<li><a href="log/it-operation-and-security-operations-2-and-3-for-agentic-ai-adoption.html">IT Operation and Security Operations #2 and #3 for Agentic AI adoption</a></li>
 </ul>
 </nav>
 <a href="https://www.linkedin.com/in/jeffpflueger/" class="btn">My Linkedin Profile</a>
