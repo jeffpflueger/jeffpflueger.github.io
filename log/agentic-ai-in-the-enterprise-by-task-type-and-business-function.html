@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agentic AI in the Enterprise - By Task Type and Business Function</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    .hero ul, .hero ol { text-align: left; margin: 0 0 25px 1.5em; font-size: 1.1em; color: #666; }
+    .hero li ul, .hero li ol { margin-bottom: 0; font-size: 1em; }
+    .hero h4, .hero h5, .hero h6 { text-align: left; font-size: 1.1em; margin-bottom: 15px; }
+    .hero img { max-width: 100%; height: auto; }
+    .hero table { border-collapse: collapse; margin: 0 0 25px; text-align: left; }
+    .hero td { border: 1px solid #ddd; padding: 6px 10px; color: #666; }
+    .post-date { color: #999; margin-bottom: 30px; }
+    .post-nav { text-align: left; margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee; }
+    .post-nav ul { display: block; list-style: none; margin-left: 0; }
+    .post-nav li { margin: 0 0 6px; }
+    .post-nav a { color: #007BFF; font-weight: normal; text-decoration: none; }
+    .post-nav a:hover { text-decoration: underline; }
+    .post-nav .current { font-weight: bold; }
+    .post-nav-top { margin: 0 0 30px; padding: 0 0 15px; border-top: 0; border-bottom: 1px solid #eee; }
+    .prev-next { display: flex; justify-content: space-between; gap: 20px; margin-bottom: 20px; }
+    .post-nav-top .prev-next { margin-bottom: 0; }
+    .prev-next .next { text-align: right; margin-left: auto; }
+    .hero > .btn { margin-top: 30px; }
+    .hero { overflow-wrap: break-word; }
+    @media (max-width: 700px) {
+      .container { width: 100%; padding: 16px; }
+      header { padding: 10px 0; }
+      header h1 { font-size: 1.6em; margin-bottom: 4px; }
+      .hero { padding: 24px 18px; margin-top: 4px; }
+      .hero h2 { font-size: 1.5em; }
+      .hero p, .hero ul, .hero ol { font-size: 1em; }
+      .post-date { margin-bottom: 20px; }
+      .prev-next { flex-direction: column; gap: 8px; }
+      .prev-next .next { margin-left: 0; text-align: left; }
+      .hero table { display: block; overflow-x: auto; }
+      footer { margin-top: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Jeff Pflueger</h1>
+      <nav>
+        <ul>
+          <li><a href="http://jeffpflueger.com">Home</a></li>
+          <li><a href="../log.html">AI Log</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+<nav class="post-nav post-nav-top">
+<div class="prev-next">
+<span class="prev"><a href="agent-guard-v2-functionality-for-ai-asset-inventory-at-an-endpoint.html">&larr; Agent Guard V2 - Functionality for AI asset inventory at an Endpoint</a></span>
+<span class="next"></span>
+</div>
+</nav>
+<h2>Agentic AI in the Enterprise - By Task Type and Business Function</h2>
+<p class="post-date">November 3, 2026</p>
+<p>I’ve been exploring Agentic AI security.</p>
+<p>I’d like to better understand:</p>
+<ol>
+<li>Who is adopting agentic systems (firmagraphics - business types, sizes, etc)
+</li>
+<li>What business functions the agentic systems are facilitating
+</li>
+<li>The specific tasks they are performing
+</li>
+</ol>
+<p>There’s a forth factor - pain. Those companies using agentic systems what are the risks and challenges and who has them most acutely. People talk about a TAM - total addressable market for a product - a colleague recently mentioned the subset that interests sales people - the Pain Addressable Market.</p>
+<p>What I learned from my research: These are difficult questions to pin down. Partly because everything is moving so quickly with agentic AI and partly because of a lack of great analysis.</p>
+<p>My first swipe at this was survey data of business users of agentic systems and AI. What I learned: Executives like to talk about business function (like customer success, etc) using agentic AI, while technical stakeholders like to talk about the task (coding, debugging, etc). So the data are all over the map.</p>
+<p>What’s even worse is that surveys and respondents are inconsistent on even the definition of Agentic AI. For instance - some surveys and responders assume a chatbot is AGENTIC because it is like a customer success AGENT. No. Agentic systems autonomously interact with other systems, like a CRM, etc. A chatbot agent just parses language.</p>
+<p>So my next swipe at the research is to try to find sources of telemetry data: Anthropic for instance has information about what tasks its agents are asked to perform and also probably the business function.</p>
+<p>Well, here too is a challenge - Anthropic for instance is heavily used for coding, which differs in use from, say ChatGPT. But the telemetry data is actual task - what agentic AI systems are doing.</p>
+<p>I want to separate the tasks agentic AI is doing from the business function. Task is interesting because from a security context, different tasks involve different systems and have a different risk profile.</p>
+<p>Business Function is also extremely important. Different business functions have different types of risk, and also the VALUE of a security solution to manage the inherent security challenges of agentic AI.</p>
+<p>So my approach is to ask two different research questions.</p>
+<ol>
+<li>A top 10 list for <strong>Business Function</strong> adoption of agentic AI
+</li>
+<li>A top 10 list of <strong>tasks</strong> being performed by agentic AI
+</li>
+</ol>
+<p>Slop alert: Huge caveat here of using Claude to do this level of research - the underlying sources are thin. There is much Claude is likely taking a guess at. That said - here’s what the output is:</p>
+<p>&lt;/human&gt;</p>
+<p>&lt;ai_output&gt;</p>
+<p><strong>Table 1: Top 10 by business function</strong></p>
+<p>Ranked by Menlo Ventures’ 2025 departmental AI spend, the only behavioral dataset organized by business function. Anthropic and OpenRouter data are added where a task maps clearly to a function.</p>
+<table>
+<tr><td><strong>Rank</strong></td><td><strong>Business function</strong></td><td><strong>Departmental AI spend (Menlo, 2025)</strong></td><td><strong>Supporting usage data</strong></td><td><strong>Source</strong></td></tr>
+<tr><td>1</td><td><strong>Engineering / software development</strong></td><td><strong>$4.0B (55%)</strong></td><td>Computer and mathematical tasks: 44% of business API traffic, 52% by Jan 2026 (Anthropic). Programming: over 50% of OpenRouter tokens</td><td><a href="https://menlovc.com/perspective/2025-the-state-of-generative-ai-in-the-enterprise/">Menlo</a>, <a href="https://www.anthropic.com/research/anthropic-economic-index-january-2026-report">Anthropic</a>, <a href="https://arxiv.org/html/2601.10088v1">OpenRouter</a></td></tr>
+<tr><td>2</td><td><strong>IT operations</strong></td><td><strong>~$730M (10%)</strong></td><td>Resolving technical issues: ~6% of business API traffic (Anthropic)</td><td><a href="https://www.saastr.com/55-of-all-departmental-ai-spend-is-now-on-coding-and-its-not-slowing-down">SaaStr/Menlo</a>, <a href="https://www.anthropic.com/research/anthropic-economic-index-september-2025-report">Anthropic</a></td></tr>
+<tr><td>3</td><td><strong>Marketing</strong></td><td><strong>~$660M (9%)</strong></td><td>Creating marketing materials: 4.7% of business API traffic (Anthropic)</td><td>Same</td></tr>
+<tr><td>4</td><td><strong>Customer support &amp; success</strong></td><td><strong>~$630M (9%)</strong></td><td>Used for ticket routing, sentiment analysis and proactive outreach</td><td><a href="https://menlovc.com/perspective/2025-the-state-of-generative-ai-in-the-enterprise/">Menlo</a></td></tr>
+<tr><td>5</td><td><strong>Design</strong></td><td><strong>~$510M (7%)</strong></td><td>—</td><td><a href="https://www.saastr.com/55-of-all-departmental-ai-spend-is-now-on-coding-and-its-not-slowing-down">SaaStr/Menlo</a></td></tr>
+<tr><td>6</td><td><strong>HR / recruiting</strong></td><td><strong>~$365M (5%)</strong></td><td>Processing business and recruitment data: 1.9% of business API traffic (Anthropic)</td><td>Same; <a href="https://www.anthropic.com/research/anthropic-economic-index-september-2025-report">Anthropic</a></td></tr>
+<tr><td>7</td><td><strong>Office &amp; administrative operations</strong> (shared back office)</td><td>Not a Menlo category</td><td>Office and administrative tasks: ~10% of business API traffic (Anthropic)</td><td><a href="https://www.anthropic.com/research/anthropic-economic-index-september-2025-report">Anthropic</a></td></tr>
+<tr><td>8</td><td><strong>Finance operations</strong></td><td>Part of “Other” (~$365M, 5% combined)</td><td>—</td><td><a href="https://www.saastr.com/55-of-all-departmental-ai-spend-is-now-on-coding-and-its-not-slowing-down">SaaStr/Menlo</a></td></tr>
+<tr><td>9</td><td><strong>Legal</strong></td><td>Part of “Other”</td><td>—</td><td>Same</td></tr>
+<tr><td>10</td><td><strong>Procurement &amp; facilities</strong></td><td>Part of “Other”</td><td>—</td><td>Same</td></tr>
+</table>
+<p><strong>Table 2: Top 10 by agentic AI task</strong></p>
+<p>Ranked by share of Anthropic’s business API traffic, the largest public dataset that classifies real agent and automation traffic by task. API use there is mostly automation rather than human-in-the-loop help: 77% of business API conversations show automation patterns. Overall, coding-related tasks make up 44–52% of business traffic, and the top 10 tasks together make up 32%. Shares are in the business API sample unless noted.</p>
+<table>
+<tr><td><strong>Rank</strong></td><td><strong>Agentic AI task</strong></td><td><strong>Share of business API traffic</strong></td><td><strong>Typical owning functions</strong></td><td><strong>Main OWASP risk</strong></td><td><strong>Source</strong></td></tr>
+<tr><td>1</td><td><strong>Fixing software errors</strong></td><td><strong>~10%</strong> (single largest task)</td><td>Engineering, IT, security operations</td><td>Code execution (ASI05)</td><td><a href="https://medium.com/@ZombieCodeKill/claude-reviews-anthropics-economic-index-ed44052c6e12">Summary of Anthropic Jan 2026 report</a></td></tr>
+<tr><td>2</td><td><strong>Debugging web applications</strong></td><td><strong>~6%</strong></td><td>Engineering</td><td>Code execution (ASI05), supply chain (ASI04)</td><td><a href="https://www.anthropic.com/research/anthropic-economic-index-september-2025-report">Anthropic Sept 2025</a></td></tr>
+<tr><td>3</td><td><strong>Resolving technical issues</strong></td><td><strong>~6%</strong></td><td>IT operations, tech support</td><td>Tool misuse (ASI02), cascading failures (ASI08)</td><td>Same</td></tr>
+<tr><td>4</td><td><strong>Developing &amp; evaluating AI systems</strong></td><td><strong>~5%</strong></td><td>Engineering, data science</td><td>Supply chain (ASI04), memory poisoning (ASI06)</td><td>Same</td></tr>
+<tr><td>5</td><td><strong>Creating marketing materials</strong></td><td><strong>4.7%</strong></td><td>Marketing</td><td>Goal hijack (ASI01), data exposure</td><td>Same</td></tr>
+<tr><td>6</td><td><strong>Building business software</strong></td><td>Large share, no exact figure</td><td>Engineering, IT</td><td>Code execution (ASI05), privilege abuse (ASI03)</td><td>Same</td></tr>
+<tr><td>7</td><td><strong>Back-office document workflows</strong> (email classification, invoice processing, calendar scheduling)</td><td>Within the ~10% office/admin category</td><td>Finance, HR, operations</td><td>Goal hijack via email or documents (ASI01), privilege abuse (ASI03)</td><td><a href="https://medium.com/@ZombieCodeKill/claude-reviews-anthropics-economic-index-ed44052c6e12">Summary of Anthropic Jan 2026 report</a></td></tr>
+<tr><td>8</td><td><strong>Processing business &amp; recruitment data</strong></td><td><strong>1.9%</strong></td><td>HR, business operations</td><td>Data exposure, privilege abuse (ASI03)</td><td><a href="https://www.anthropic.com/research/anthropic-economic-index-september-2025-report">Anthropic Sept 2025</a></td></tr>
+<tr><td>9</td><td><strong>Analysis &amp; problem-solving</strong></td><td>49% of Copilot user goals*</td><td>All functions</td><td>Memory poisoning (ASI06), trust exploitation (ASI09)</td><td><a href="https://www.microsoft.com/en-us/worklab/work-trend-index/agents-human-agency-and-the-opportunity-for-every-organization">Microsoft Work Trend Index</a></td></tr>
+<tr><td>10</td><td><strong>Finding information / research</strong></td><td>15% of Copilot user goals*</td><td>All functions</td><td>Goal hijack via retrieved content (ASI01), memory poisoning (ASI06)</td><td>Same</td></tr>
+</table>
+<p>&lt;/ai_output&gt;<br></p>
+<p>&lt;human&gt;</p>
+<p><strong>What I learned:</strong></p>
+<ul>
+<li>People are confused about what an “agent” is versus “agentic AI”. Many people call a customer success chatbot an Agent. What we are interested in Agentic AI - systems that take autonomous actions and are connected with other systems
+</li>
+<li>Task use cases: Coding dominates. And there is a long tail of other task types.
+</li>
+<li>Business Functions - #1 adopter of Agentic AI is Engineering / software development followed by IT Operations.
+</li>
+<li>There are so many different business uses and task types, that focusing on a narrow category may not be as effective as just simply focusing on the governance and visibility into ALL of them across the enterprise
+</li>
+<li>The DATA of how agentic AI is being used in the Enterprise becomes a valuable product itself
+</li>
+</ul>
+<p>Sources:</p>
+<ul>
+<li><a href="https://www.anthropic.com/research/economic-index-geography">Anthropic Economic Index – AI’s role in the US and global economy</a>
+</li>
+<li><a href="https://www.anthropic.com/research/anthropic-economic-index-september-2025-report">Anthropic Economic Index – Uneven adoption (Sept 2025)</a>
+</li>
+<li><a href="https://www.anthropic.com/research/anthropic-economic-index-january-2026-report">Anthropic Economic Index – Economic primitives (Jan 2026)</a>
+</li>
+<li><a href="https://arxiv.org/html/2601.10088v1">OpenRouter / a16z – State of AI: 100T token study</a>
+</li>
+<li><a href="https://xenospectrum.com/en/openrouter-agent-tokens-cache-economics/">Xenospectrum – OpenRouter agent vs. human tokens</a>
+</li>
+<li><a href="https://www.microsoft.com/en-us/worklab/work-trend-index/agents-human-agency-and-the-opportunity-for-every-organization">Microsoft – 2026 Work Trend Index: Agents</a>
+</li>
+<li><a href="https://menlovc.com/perspective/2025-the-state-of-generative-ai-in-the-enterprise/">Menlo Ventures – 2025 State of Generative AI in the Enterprise</a>
+</li>
+<li><a href="https://www.nojitter.com/ai-automation/menlo-ventures-estimates-19-billion-in-gen-ai-spend-during-2025">No Jitter – Menlo spend breakdown and methodology</a>
+</li>
+<li><a href="https://www.saastr.com/55-of-all-departmental-ai-spend-is-now-on-coding-and-its-not-slowing-down">SaaStr – 55% of departmental AI spend is coding</a>
+</li>
+</ul>
+<nav class="post-nav">
+<div class="prev-next">
+<span class="prev"><a href="agent-guard-v2-functionality-for-ai-asset-inventory-at-an-endpoint.html">&larr; Agent Guard V2 - Functionality for AI asset inventory at an Endpoint</a></span>
+<span class="next"></span>
+</div>
+<h3>All posts</h3>
+<ul>
+<li class="current">Agentic AI in the Enterprise - By Task Type and Business Function <span class="post-date-small">(November 3, 2026)</span></li>
+<li><a href="agent-guard-v2-functionality-for-ai-asset-inventory-at-an-endpoint.html">Agent Guard V2 - Functionality for AI asset inventory at an Endpoint <span class="post-date-small">(November 1, 2026)</span></a></li>
+<li><a href="agent-guard-vibe-coding-a-simple-agentic-ai-governance-and-security-script.html">Agent Guard - Vibe Coding A Simple Agentic AI Governance and Security Script <span class="post-date-small">(October 31, 2026)</span></a></li>
+<li><a href="owasp-top-10-for-agentic-applications-2026-and-agentic-ai-governance-and-security.html">OWASP Top 10 For Agentic Applications 2026 and Agentic AI Governance and Security <span class="post-date-small">(October 30, 2026)</span></a></li>
+<li><a href="building-a-simple-cms.html">Building a Simple CMS <span class="post-date-small">(October 15, 2026)</span></a></li>
+<li><a href="ai-experiments-part-2-resume-parsing-project.html">AI experiments part 2: Resume Parsing Project <span class="post-date-small">(October 2, 2025)</span></a></li>
+<li><a href="ai-experiments-part-1-setting-up-a-local-ai-workstation.html">AI experiments part 1: Setting Up A Local AI Workstation <span class="post-date-small">(October 1, 2025)</span></a></li>
+</ul>
+</nav>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Site hosted on <a href='https://pages.github.com/'>GitHub Pages</a></p>
+    </div>
+  </footer>
+</body>
+</html>
